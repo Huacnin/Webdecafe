@@ -1,26 +1,26 @@
 <template>
   <v-app-bar
     v-scroll="onScroll"
-    :color="!isScrolling ? 'transparent' : 'white'"
+    :color="!isScrolling ? 'transparent' : 'secondary'"
     fixed
     flat
   >
     <v-slide-x-transition>
       <v-img
         v-if="showLogo"
-        :src="require('@/assets/Decafe2222.png')"
+        :src="require('@/assets/Logo1.png')"
         class="shrink"
         contain
-        max-height="55"
+        max-height="35"
       />
     </v-slide-x-transition>
     <v-slide-x-transition>
       <tr
         v-if="showLogo"
         id="formatoLogo"
-        class="text-capitalize primary--text hidden-sm-and-down"
+        class="primary--text hidden-sm-and-down"
       >
-        Decafe & Más
+        Cafe<b id="formatoand" class="font-weight-thin ml-1 mr-1 font-italic">&</b>Tech
       </tr>
     </v-slide-x-transition>
     <v-spacer />
@@ -30,7 +30,7 @@
         id="formatoSlogan"
         class="primary--text hidden-sm-and-down"
       >
-        Tecnologías para el éxito de su negocio.
+        Technology Applications for Business
       </tr>
     </v-slide-x-transition>
 
@@ -40,16 +40,18 @@
       class="hidden-sm-and-down"
     /> -->
 
-    <div class="text-center">
-      <base-btn
+    <div class="text-center"><!-- https://decafeapp.decafeymas.com/ -->
+      <v-btn
         v-if="showLogo"
-        id="formatoSlogan"
-        class="ml-3 white--text floating-sm-left"
+        id="formatoApp"
+        class="ml-3 white--text floating-sm-left font-weight-thin"
         medium
-        href="https://decafeapp.decafeymas.com"
+        rounded
+        color="primary"
+        href="http://www.decafeytech.com/"
         target="blank"
       >
-        ERP Decafeapp
+      ERP Decafeapp
 
         <v-icon
           right
@@ -57,7 +59,7 @@
         >
           mdi-apps
         </v-icon>
-      </base-btn>
+      </v-btn>
     </div>
   </v-app-bar>
 </template>
@@ -85,16 +87,22 @@
   }
 </script>
 <style scoped>
-@import url('https://fonts.googleapis.com/css?family=Mina');
-
+#formatoand  {
+    font-family:Helvetica;
+    font-size: 1.5rem;
+}
 #formatoLogo {
-    font-family: 'Mina';
-    font-size: 2.1rem;
-    margin-left: -3%;
-    margin-top: 0.4%;
+    font-family: 'Mina', sans-serif;
+    font-size: 1.8rem;
+    margin-left: -5.5%;
+    margin-top: 0.8%;
 }
 #formatoSlogan  {
-    font-family: 'Mina';
+    font-family: 'Mina', sans-serif;
     font-size: 1.2rem;
+}
+#formatoApp {
+    font-family: 'Mina', sans-serif;
+    font-size: 1rem;
 }
 </style>

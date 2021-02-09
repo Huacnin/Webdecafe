@@ -19,14 +19,17 @@
         cols="12"
         md="6"
       >
+      <div class="text-center">
         <v-img
           contain
-          :src="require('@/assets/Decafe222.png')"
-          class="grow hidden-sm-and-down ml-5 mt-5"
-          max-height="80"
+          :src="require('@/assets/Logo1.png')"
+          class="grow hidden-sm-and-down mt-7"
+          max-height="45"
           width="100%"
-          position="top left"
         />
+        <p id="formatoLogo" class="font-weight-thin"> Decafe<b id="formatoand" class="font-weight-thin ml-1 mr-1 font-italic">&</b>Tech</p> 
+        <p id="formatoSlogan" class="accent--text font-weight-thin">Technology Applications for Business</p> 
+        </div>
         <v-row
           align="center"
           justify="center"
@@ -63,3 +66,19 @@
     </v-row>
   </section>
 </template>
+<style scoped>
+#formatoand {
+    font-family:Helvetica;
+    font-size: 1.5rem;
+}
+#formatoLogo {
+    font-family: 'Mina', sans-serif;
+    font-size: 2rem;
+    margin-top: 3%;
+}
+#formatoSlogan {
+    font-family: 'Mina', sans-serif;
+    font-size: 0.7rem;
+    margin-top: -9%;
+}
+</style>

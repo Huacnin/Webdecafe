@@ -99,7 +99,6 @@
 </template>
 
 <script>
-// eslint-disable-next-line no-unused-vars
   import emailjs from 'emailjs-com'
   import Swal from 'sweetalert2'
 

@@ -1,9 +1,10 @@
 <template>
   <v-footer
     height="60"
-    class="justify-center"
+    padless
+    color="secondary"
   >
-    <v-container>
+    <v-container fluid>
       <v-row
         align="center"
         no-gutters
@@ -13,8 +14,8 @@
           sm="6"
           md="4"
         >
-          <div class="text-left">
-            &copy;{{ new Date().getFullYear() }}
+          <div class="text-center primary--text">
+            <b class="font-weight-thin">&copy;{{ new Date().getFullYear() }}</b>
           </div>
         </v-col>
         <v-spacer />
@@ -27,7 +28,7 @@
             id="formatoLogo"
             class="text-center font-weight-light"
           >
-            Decafe & Más
+            <b class="font-weight-thin primary-text">Decafe & Tech</b>
           </div>
         </v-col>
         <v-col
@@ -35,7 +36,7 @@
           sm="6"
           md="4"
         >
-          <div class="font-weight-thin pt-6 pt-md-0 text-right">
+          <div class="font-weight-thin text-center">
             Made with
             <v-icon
               size="18"
@@ -45,8 +46,8 @@
             </v-icon>
             by <a
               class="primary--text text-decoration-none"
-              href="https://www.decafeymas.somee.com"
-            >Decafe & Más S.A.C.</a>
+              href="https://www.decafeymas.com"
+            >Decafe & Tech S.A.C.</a>
           </div>
         </v-col>
       </v-row>
@@ -64,14 +65,12 @@
   }
 </script>
 <style scoped>
-@import url('https://fonts.googleapis.com/css?family=Helvetica');
-@import url('https://fonts.googleapis.com/css?family=Mina');
 #formatoWhatsapp  {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Helvetica;
     font-size: 1.3rem;
 }
 #formatoLogo {
-    font-family: 'Mina';
+    font-family: 'Mina', sans-serif;
     font-size: 1rem;
     margin-top: 1%;
 }

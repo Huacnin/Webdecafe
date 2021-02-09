@@ -4,7 +4,7 @@
   class="overflow-hidden"
   >
      <v-row
-        class="primary white--text"
+        class="accent white--text"
         no-gutters
         align="center"
         >
@@ -69,7 +69,7 @@
                     >
                     mdi-email
                     </v-icon>
-                    <b class="success--text font-weight-thin ml-5">eric.marin2903@gmail.com</b> 
+                    <b class="success--text font-weight-thin ml-5">eric.marin@decafeymas.com</b> 
                 </a>
             </div>
         </v-col>

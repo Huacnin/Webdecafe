@@ -2,13 +2,11 @@
   <v-app v-scroll="onScroll">
     <core-app-bar/>
     <core-view/>
-    <core-footer/>
     <v-btn
       id="flotanteWhats"
       rounded
       large
-      color="accent"
-      class="text-capitalize white--text font-weight-regular"
+      class="text-capitalize white--text  font-weight-medium"
       href="https://wa.me/51964023536?text=Me%20interesa%20conocer%20más%20sobre%20sus%20aplicaciones"
       target="blank"
       >
@@ -27,17 +25,18 @@
         fab
         outlined
         large
-        color="white"
+        color="success"
         @click="scrollUp()"
       >
         <v-icon
           medium
-          color="white"
+          color="primary"
         >
           mdi-chevron-up
         </v-icon>
       </v-btn>
-    </v-fab-transition>
+    </v-fab-transition>    
+    <core-footer/>
   </v-app>
 </template>
 
@@ -79,13 +78,14 @@
     left:30px;
     font-family:Arial, Helvetica, sanSs-serif;
     font-size: 1.3rem;
+    background-color: #455A64;
 }
 .button-up {
   display:scroll;
   position: fixed;
   right: 40px;
   bottom:160px;
-  background-color: #455A64;
+  background-color: #f0f0f0;
   border-color: #ffffff;
   transition: 0.1s ease;
 }
